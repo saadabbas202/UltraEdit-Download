@@ -1,0 +1,220 @@
+body {
+            background-color: rgb(250, 250, 250);
+        }
+
+        .logo {
+
+            /* background-color: aqua; */
+        }
+
+        .logo img {
+            width: 160px;
+            height: 50px;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 40px;
+
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .right ul li span {
+            padding: 0 5px;
+        }
+
+        .right ul li:hover {
+            background-color: rgba(124, 63, 63, 0.05);
+
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            transform: translateY(-2px);
+
+        }
+
+        .right ul li span {
+            padding: 8px 10px;
+            display: inline-block;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            position: relative;
+        }
+
+        .right ul li span {
+            padding: 0 5px;
+            position: relative;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        /* Underline animation */
+        .right ul li span::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            height: 2px;
+            width: 0%;
+            background-color: #301275;
+            transition: width 0.3s ease;
+        }
+
+        /* SVG icon animation */
+        .right ul li svg {
+            transition: transform 0.4s ease;
+        }
+
+        /* Hover effects */
+        .right ul li:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .right ul li:hover span {
+            color: #301275;
+            /* color fade */
+        }
+
+        .right ul li:hover span::after {
+            width: 100%;
+            /* animate underline */
+        }
+
+        .right ul li:hover svg {
+            transform: rotate(180deg);
+            /* rotate icon */
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 70px;
+            gap: 23px;
+            font-family: sans-serif;
+        }
+
+        .first span {
+            font-size: 40px;
+
+        }
+
+        section span img {
+            margin: 0 23p
+        }
+
+        .first p {
+            font-size: 23px;
+            width: 61vw;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #00b6d1;
+            padding: 14px 16px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+            margin: 12px 0px;
+            cursor: pointer;
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+        }
+        .green{
+            background-color: #5cb85c;
+        }
+
+        .right ul li .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 20px 0;
+            z-index: 9999;
+            width: 124px;
+            background: #fff;
+            opacity: 1;
+            border-top: 3px solid #2ea3f2;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+            text-align: left;
+        }
+
+        .right ul li:hover .submenu {
+            display: block;
+        }
+        .flex{
+            display: flex;
+        }
+        .small{
+            font-size: 12px;
+        }
+        .second{
+        
+        max-width: 70vw;
+        margin: auto;
+        }
+        .item{
+            padding: 23px;
+            background-color:#f9f9f9;
+            border-radius: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+        .item-lang{
+            font-weight: 500;
+            text-align: center;
+            padding-bottom: 36px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+        }
+        .download :nth-child(2){
+            font-size: 23px;
+
+        }
+        .download img{
+            padding: 0px 10px;
+        }
+        .download{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: sans-serif;
+        }
+        @media screen and (max-width:1145px) {
+            .grid{
+                background-color: red;
+            grid-template-columns: 1fr;
+            
+           
+        }
+            
+        }
